@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x count_directories_in_path.sh
+echo $((`echo $PATH | grep -o ":/" | wc -1`+ 1))
